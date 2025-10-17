@@ -19,6 +19,9 @@ import { sidebarItems } from "@/navigation/sidebar/sidebar-items";
 
 import { NavMain } from "./nav-main";
 import { NavUser } from "./nav-user";
+import Image from "next/image";
+
+import logo from '~/mediva-logo.png'
 
 const data = {
   navSecondary: [
@@ -64,9 +67,8 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton asChild className="data-[slot=sidebar-menu-button]:!p-1.5">
-              <Link href="/dashboard/default">
-                <Command />
-                <span className="text-base font-semibold">{APP_CONFIG.name}</span>
+              <Link href="/dashboard/default" className="flex items-center justify-center">
+                <Image src={logo} alt="Logo" width={108} height={108} />
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
@@ -78,7 +80,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         {/* <NavSecondary items={data.navSecondary} className="mt-auto" /> */}
       </SidebarContent>
       <SidebarFooter>
-        <NavUser user={rootUser} />
+        {/* <NavUser user={rootUser} /> */}
       </SidebarFooter>
     </Sidebar>
   );

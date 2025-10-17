@@ -71,7 +71,10 @@ export default async function Layout({ children }: Readonly<{ children: ReactNod
             <div className="flex items-center gap-2">
               <LayoutControls {...layoutPreferences} />
               <ThemeSwitcher />
+              <div className="hidden lg:flex items-center gap-2">
               <AccountSwitcher users={users} />
+              <p className="text-sm font-medium">Rumah Sakit Mediva</p>
+              </div>
             </div>
           </div>
         </header>

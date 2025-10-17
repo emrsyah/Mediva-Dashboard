@@ -5,9 +5,6 @@ Mediva Dashboard is a patient-centric monitoring and analytics tool built with N
 1. **Patient Data (`/dashboard/data-pasien`)** – a full-featured table view for browsing, searching, and exporting patient records. It groups patients by risk category ("Risiko Tinggi", "Dalam Pemantauan", etc.) and shows warning toasts when high-risk cases appear.
 2. **Default Overview (`/dashboard/default`)** – an executive summary with KPI cards and interactive charts (medication mix, risk distribution, symptoms, trimester trends, and a visitors area chart) that highlight trends in real time.
 
-<p align="center">
-  <img src="media/dashboard.png" alt="Mediva Dashboard Screenshot" width="800" />
-</p>
 
 ## Key Features
 
